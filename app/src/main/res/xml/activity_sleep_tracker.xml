@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/sleep_quality_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sleep Quality (1-5)"
+        android:textSize="20sp"/>
+
+    <SeekBar
+        android:id="@+id/sleep_quality_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"/>
+
+    <Button
+        android:id="@+id/save_sleep_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Sleep Data"
+        android:onClick="onSaveSleepDataClick"/>
+</LinearLayout>
